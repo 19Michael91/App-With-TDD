@@ -1,0 +1,66 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+// @import '~bootstrap/scss/bootstrap';
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    height: 100vh;
+}
+
+.button {
+    @apply .bg-blue-500 .text-white .no-underline .rounded-lg .text-sm .py-2 .px-5;
+    box-shadow: 0 2px 7px 0 #b0eaff;
+}
+
+.button-gray {
+    @apply .bg-gray-500 .text-white .no-underline .rounded-lg .text-sm .py-2 .px-5;
+    box-shadow: 0 2px 7px 0 #b0eaff;
+}
+
+.button-cancel {
+    @apply .bg-red-500  .text-white .font-bold .py-1 .px-4 .rounded-lg;
+    position: relative;
+    top: 4px;
+}
+
+.button-cancel-modal {
+    @apply .bg-red-500  .text-white .font-bold .py-1 .px-4 .rounded-lg;
+    position: relative;
+}
+
+.card {
+    @apply .bg-white .p-5 .rounded .shadow;
+}
+
+.border-error {
+    border: solid 1px red;
+}
+
+.dropdown-toggle {
+    > button:focus {
+        outline: 0;
+    }
+}
+
+.dropdown-menu-link {
+    @apply .block .no-underline .text-sm .leading-loose .px-4;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+}
